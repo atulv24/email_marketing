@@ -1,0 +1,14 @@
+langchain 
+langchain_openai 
+langgraph 
+langchainhub 
+langchain_experimental 
+python-dotenv 
+secure-smtplib 
+email_listener 
+beautifulsoup4 
+OpenAI 
+schedule 
+pytz 
+gradio
+streamlit
