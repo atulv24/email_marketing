@@ -31,7 +31,7 @@ from email.utils import parsedate_to_datetime
 import streamlit as st
 import random
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 sender_email= "Atul.v@factspan.com"
 password = "sieptuaafdkhccqc"
 smtp_server = 'smtp.gmail.com'
@@ -40,30 +40,30 @@ imap_server = 'imap.gmail.com'
 imap_port = 993
 file_name = "./sample_data.csv"
 
+lead_list = []
+# lead_list = [
+#     {
+#         "Company Name": "Factspan",
+#         "Contact Name": "Atul Verma",
+#         "Job Title": "SPA ",
+#         "Email": "atul.verma@factspan.com",
+#         "Phone Number": "+1 123 456 7890",
+#         "Industry": "Software",
+#         "Company Size": "51-200 employees",
+#         "Location": "California, USA",
 
-lead_list = [
-    {
-        "Company Name": "Factspan",
-        "Contact Name": "Atul Verma",
-        "Job Title": "SPA ",
-        "Email": "atul.verma@factspan.com",
-        "Phone Number": "+1 123 456 7890",
-        "Industry": "Software",
-        "Company Size": "51-200 employees",
-        "Location": "California, USA",
-
-    },
-    {
-        "Company Name": "Factspan",
-        "Contact Name": "Charan Reddy",
-        "Job Title": "Senior Analyst",
-        "Email": "charan.reddy@factspan.com",
-        "Phone Number": "+1 123 456 7890",
-        "Industry": "Software",
-        "Company Size": "51-200 employees",
-        "Location": "Bangalore, IN",
-    }   
-]
+#     },
+#     {
+#         "Company Name": "Factspan",
+#         "Contact Name": "Charan Reddy",
+#         "Job Title": "Senior Analyst",
+#         "Email": "charan.reddy@factspan.com",
+#         "Phone Number": "+1 123 456 7890",
+#         "Industry": "Software",
+#         "Company Size": "51-200 employees",
+#         "Location": "Bangalore, IN",
+#     }   
+# ]
 
 
 st.title("Inside Sales Executive Agent")
@@ -206,7 +206,7 @@ def public_agent(state):
 
 def customer_intelligence_report(state):
     input_context = state["output"]
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = "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"
 
     prompt = f"""
 
